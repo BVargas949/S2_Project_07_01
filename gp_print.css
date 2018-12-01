@@ -14,14 +14,41 @@
 
 */
 
-
+/* Within the hidden objects styles are the nav, footer, and article styles with a display of none. This is to hide them when the user wishes to print them. */
 
 /* Hidden Objects */
+nav,
+footer,
+article {
+    display: none;
+}
 
 
 
 
 
-
-
+/* within the Book sheet styles the element of section with an ID of sheet was given new specifications. It was given a width size of siz inches, the bottom and top margins were set to zero inches, the left and right were set to auto. The margins were given those value to center the sheet when printed. The images with different classes were given new width sizes. Images with a class of size1 = width size of five inches. Images with a class of size2 = width size of three inches. Images with a class of size3 = width size of two inches. Images with a class of size4 = width size of 1.5 inches.*/
 /* Comic Book Sheet Styles */
+section#sheet {
+    width: 6in;
+    margin-top: 0in;
+    margin-bottom: 0in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.size1 {
+    width: 5in;
+}
+
+img.size2 {
+    width: 3in;
+}
+
+img.size3 {
+    width: 2in;
+}
+
+img.size4 {
+    width: 1.5in;
+}

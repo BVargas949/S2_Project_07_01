@@ -16,11 +16,14 @@
 
 */
 
+/* The @import command was used to bring in an outside css file into this one. */
 
-/* Import Basic Design Styles Used on All Screens */
+/* Import Basic Design Styles Used on All Screens  */
 
 @import url("gp_designs.css");
 
+
+/* within the Flex styles sheet the body, a section, and the article were given new specifications. The body was given a display of flexbox webkit so that browsers such as chrome and safari may render the document with the elements in Flexbox. The flex flow was used to make the elements go from left to right. The section with an ID of sheet was given a flex specification  so the element would expanded and shrink at a ratio of 3:1 with a basis of 301px. The article was given a flex of specification so it would expand and shrink at a ratio of 1:3 with a basis of 180px. */
 /* Flex Layout Styles */
 body {
     display: -webkit-flex;
@@ -38,6 +41,8 @@ article {
 
     flex: 1 3 180px;
 }
+
+/* Within the mobile Devies styles, A media query was used to target screen viewports smaller than 481 pixel units. The specification written for this media query affect the images, navigation, and footer. The images with a class of panel  */
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
@@ -75,5 +80,21 @@ article {
         display: -webkit-flex;
         display: flex;
         flex: 1 1 auto;
+    }
+
+    img.panel.size1 {
+        width: 100%;
+    }
+
+    img.panel.size2 {
+        width: 60%;
+    }
+
+    img.panel.size3 {
+        width: 40%;
+    }
+
+    img.panel.size4 {
+        width: 30%;
     }
 }
