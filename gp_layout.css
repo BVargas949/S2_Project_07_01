@@ -42,7 +42,7 @@ article {
     flex: 1 3 180px;
 }
 
-/* Within the mobile Devies styles, A media query was used to target screen viewports smaller than 481 pixel units. The specification written for this media query affect the images, navigation, and footer. The images with a class of panel  */
+/* Within the mobile Devies styles, A media query was used to target screen viewports smaller than 481 pixel units. The specification written for this media query affect the images, navigation, and footer. The images with a class of panel were given a width of 100% so the images fill the element they arenested in. The nav with a class of horizontal was given an order of 99 so that it may render before the footer (nested in the body) which was given an oder of 100.  */
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
@@ -63,6 +63,8 @@ article {
     }
 }
 
+
+/* Wthin the Tablet and Devices styes a media query was created to target viewports with a minimum of 480 pixel units. The unordered list nested in the nav(class of hoizontal) was given a display and webkit of flex box without wrap and in a row. The height of the unordered list was changes to 40 pixel units. The items nested within the unordered list weregiven a command to grow and shrink at a ration of 1:1 with a basis of auto using displayed of flex.  The images with different classes were given different sixzes using width and percent as the Unit. */
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
